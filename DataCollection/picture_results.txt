@@ -1,0 +1,138 @@
+/usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+Original dataset shape Counter({'0': 398, '1': 82})
+Resampled dataset shape Counter({'1': 82, '0': 82})
+SGDClassifier
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    3.5s finished
+(0.5, 1.5703520424598209e-17)
+             precision    recall  f1-score   support
+
+          0       0.50      0.34      0.41        82
+          1       0.50      0.66      0.57        82
+
+avg / total       0.50      0.50      0.49       164
+
+Nearest Neighbors
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    8.8s finished
+/usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:516: RuntimeWarning: invalid value encountered in double_scalars
+  mcc = cov_ytyp / np.sqrt(var_yt * var_yp)
+(0.5, 0.0)
+/usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+          0       0.00      0.00      0.00        82
+          1       0.50      1.00      0.67        82
+
+avg / total       0.25      0.50      0.33       164
+
+Linear SVM
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   15.7s finished
+(0.54878048780487809, 0.099014754297667415)
+             precision    recall  f1-score   support
+
+          0       0.54      0.63      0.58        82
+          1       0.56      0.46      0.51        82
+
+avg / total       0.55      0.55      0.55       164
+
+RBF SVM
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   15.6s finished
+(0.46951219512195119, -0.17733172553297713)
+             precision    recall  f1-score   support
+
+          0       0.00      0.00      0.00        82
+          1       0.48      0.94      0.64        82
+
+avg / total       0.24      0.47      0.32       164
+
+Gaussian Process
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   54.0s finished
+(0.56707317073170727, 0.2095713367580658)
+             precision    recall  f1-score   support
+
+          0       0.54      0.95      0.69        82
+          1       0.79      0.18      0.30        82
+
+avg / total       0.66      0.57      0.49       164
+
+Decision Tree
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    5.2s finished
+(0.6097560975609756, 0.23145502494313785)
+             precision    recall  f1-score   support
+
+          0       0.58      0.77      0.66        82
+          1       0.66      0.45      0.54        82
+
+avg / total       0.62      0.61      0.60       164
+
+Random Forest
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    3.3s finished
+(0.63414634146341464, 0.27500000000000008)
+             precision    recall  f1-score   support
+
+          0       0.67      0.52      0.59        82
+          1       0.61      0.74      0.67        82
+
+avg / total       0.64      0.63      0.63       164
+
+Neural Net
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   26.2s finished
+(0.5, 2.8551855317451289e-18)
+             precision    recall  f1-score   support
+
+          0       0.50      0.66      0.57        82
+          1       0.50      0.34      0.41        82
+
+avg / total       0.50      0.50      0.49       164
+
+AdaBoost
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   38.6s finished
+(0.6402439024390244, 0.28067570844923029)
+             precision    recall  f1-score   support
+
+          0       0.64      0.66      0.65        82
+          1       0.65      0.62      0.63        82
+
+avg / total       0.64      0.64      0.64       164
+
+Naive Bayes
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    4.1s finished
+(0.48780487804878048, -0.079056941504209471)
+             precision    recall  f1-score   support
+
+          0       0.49      0.96      0.65        82
+          1       0.25      0.01      0.02        82
+
+avg / total       0.37      0.49      0.34       164
+
+QDA
+/usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+/usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+/usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   26.0s finished
+(0.48170731707317072, -0.038115410316982817)
+             precision    recall  f1-score   support
+
+          0       0.49      0.62      0.55        82
+          1       0.47      0.34      0.40        82
+
+avg / total       0.48      0.48      0.47       164
+
+('SGDClassifier', 0.5, 0.5, 0.5, 1.5703520424598209e-17)
+('Nearest Neighbors', 0.5, 0.5, 0.5, 0.0)
+('Linear SVM', 0.54878048780487809, 0.54878048780487809, 0.54878048780487809, 0.099014754297667415)
+('RBF SVM', 0.46951219512195119, 0.46951219512195119, 0.46951219512195119, -0.17733172553297713)
+('Gaussian Process', 0.56707317073170727, 0.56707317073170727, 0.56707317073170727, 0.2095713367580658)
+('Decision Tree', 0.6097560975609756, 0.6097560975609756, 0.6097560975609756, 0.23145502494313785)
+('Random Forest', 0.63414634146341464, 0.63414634146341464, 0.63414634146341464, 0.27500000000000008)
+('Neural Net', 0.5, 0.5, 0.5, 2.8551855317451289e-18)
+('AdaBoost', 0.6402439024390244, 0.6402439024390244, 0.6402439024390244, 0.28067570844923029)
+('Naive Bayes', 0.48780487804878048, 0.48780487804878048, 0.48780487804878048, -0.079056941504209471)
+('QDA', 0.48170731707317072, 0.48170731707317072, 0.48170731707317072, -0.038115410316982817)
+ashwin@ashwin-laptop:~/WorkBench/Dreams/PredictAwards/DataCollection$ 
+
+()

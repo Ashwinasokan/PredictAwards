@@ -1,0 +1,137 @@
+ashwin@ashwin-laptop:~/WorkBench/Dreams/PredictAwards/DataCollection$ python plot_iris_logistic.py 
+/usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+Original dataset shape Counter({'0': 339, '1': 88})
+Resampled dataset shape Counter({'1': 88, '0': 88})
+SGDClassifier
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    1.8s finished
+(0.52272727272727271, 0.045501575519329034)
+             precision    recall  f1-score   support
+
+          0       0.52      0.55      0.53        88
+          1       0.52      0.50      0.51        88
+
+avg / total       0.52      0.52      0.52       176
+
+Nearest Neighbors
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    7.6s finished
+/usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:516: RuntimeWarning: invalid value encountered in double_scalars
+  mcc = cov_ytyp / np.sqrt(var_yt * var_yp)
+(0.5, 0.0)
+/usr/local/lib/python2.7/dist-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+          0       0.00      0.00      0.00        88
+          1       0.50      1.00      0.67        88
+
+avg / total       0.25      0.50      0.33       176
+
+Linear SVM
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    9.8s finished
+(0.5, 7.6190555676482607e-18)
+             precision    recall  f1-score   support
+
+          0       0.50      0.56      0.53        88
+          1       0.50      0.44      0.47        88
+
+avg / total       0.50      0.50      0.50       176
+
+RBF SVM
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    9.9s finished
+(0.35795454545454547, -0.37288521227723548)
+             precision    recall  f1-score   support
+
+          0       0.10      0.03      0.05        88
+          1       0.41      0.68      0.52        88
+
+avg / total       0.26      0.36      0.28       176
+
+Gaussian Process
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   33.1s finished
+(0.49431818181818182, -0.075592894601845428)
+             precision    recall  f1-score   support
+
+          0       0.50      0.99      0.66        88
+          1       0.00      0.00      0.00        88
+
+avg / total       0.25      0.49      0.33       176
+
+Decision Tree
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    2.6s finished
+(0.52840909090909094, 0.056998797338064115)
+             precision    recall  f1-score   support
+
+          0       0.53      0.57      0.55        88
+          1       0.53      0.49      0.51        88
+
+avg / total       0.53      0.53      0.53       176
+
+Random Forest
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    2.8s finished
+(0.47159090909090912, -0.058864280043193148)
+             precision    recall  f1-score   support
+
+          0       0.46      0.34      0.39        88
+          1       0.48      0.60      0.53        88
+
+avg / total       0.47      0.47      0.46       176
+
+Neural Net
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   15.6s finished
+(0.5, 0.0)
+             precision    recall  f1-score   support
+
+          0       0.50      0.33      0.40        88
+          1       0.50      0.67      0.57        88
+
+avg / total       0.50      0.50      0.49       176
+
+AdaBoost
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   24.6s finished
+(0.48863636363636365, -0.022750787759664506)
+             precision    recall  f1-score   support
+
+          0       0.49      0.47      0.48        88
+          1       0.49      0.51      0.50        88
+
+avg / total       0.49      0.49      0.49       176
+
+Naive Bayes
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:    2.6s finished
+(0.47727272727272729, -0.15249857033260472)
+             precision    recall  f1-score   support
+
+          0       0.49      0.95      0.65        88
+          1       0.00      0.00      0.00        88
+
+avg / total       0.24      0.48      0.32       176
+
+QDA
+/usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+/usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+/usr/local/lib/python2.7/dist-packages/sklearn/discriminant_analysis.py:695: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+[Parallel(n_jobs=7)]: Done   3 out of   3 | elapsed:   18.8s finished
+(0.44318181818181818, -0.15109947130387491)
+             precision    recall  f1-score   support
+
+          0       0.47      0.77      0.58        88
+          1       0.33      0.11      0.17        88
+
+avg / total       0.40      0.44      0.38       176
+
+('SGDClassifier', 0.52272727272727271, 0.52272727272727271, 0.52272727272727271, 0.045501575519329034)
+('Nearest Neighbors', 0.5, 0.5, 0.5, 0.0)
+('Linear SVM', 0.5, 0.5, 0.5, 7.6190555676482607e-18)
+('RBF SVM', 0.35795454545454547, 0.35795454545454547, 0.35795454545454547, -0.37288521227723548)
+('Gaussian Process', 0.49431818181818182, 0.49431818181818182, 0.49431818181818182, -0.075592894601845428)
+('Decision Tree', 0.52840909090909094, 0.52840909090909094, 0.52840909090909094, 0.056998797338064115)
+('Random Forest', 0.47159090909090912, 0.47159090909090912, 0.47159090909090912, -0.058864280043193148)
+('Neural Net', 0.5, 0.5, 0.5, 0.0)
+('AdaBoost', 0.48863636363636365, 0.48863636363636365, 0.48863636363636365, -0.022750787759664506)
+('Naive Bayes', 0.47727272727272729, 0.47727272727272729, 0.47727272727272729, -0.15249857033260472)
+('QDA', 0.44318181818181818, 0.44318181818181818, 0.44318181818181818, -0.15109947130387491)
+
